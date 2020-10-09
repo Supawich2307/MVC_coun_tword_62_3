@@ -1,0 +1,42 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0",
+      "title": "Find frequency word"
+    },
+    "host": "localhost:8080",
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/gettext": {
+        "post": {
+          "tags": [
+            "insert text"
+          ],
+          "consumes": [
+            "application/x-www-form-urlencoded"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "msg",
+              "in": "formData",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Update",
+              "schema": {
+                "example": "ใส่ข้อมูลสำเร็จ"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
